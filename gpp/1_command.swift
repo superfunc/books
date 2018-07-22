@@ -4,8 +4,8 @@
 // relying more on value semantics.
 
 protocol Command {
-    mutating func undo() -> Void
-    mutating func exec() -> Void
+    func undo() -> Void
+    func exec() -> Void
 }
 
 class Pos2D {
